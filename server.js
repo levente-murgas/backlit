@@ -17,10 +17,11 @@ async function exec(args) {
 }
 
 http.createServer((req, res) => {
-  const asset = { '/': 'text/html', '/liquid-glass.css': 'text/css', '/liquid-glass.js': 'text/javascript' }[req.url];
+  const file = req.url.split('?')[0]; // ignore cache-busting query strings
+  const asset = { '/': 'text/html', '/liquid-glass.css': 'text/css', '/liquid-glass.js': 'text/javascript', '/res/logo.svg': 'image/svg+xml' }[file];
   if (req.method === 'GET' && asset) {
     res.writeHead(200, { 'Content-Type': `${asset}; charset=utf-8` });
-    return fs.createReadStream(path.join(__dirname, req.url === '/' ? 'index.html' : req.url)).pipe(res);
+    return fs.createReadStream(path.join(__dirname, file === '/' ? 'index.html' : file)).pipe(res);
   }
   if (req.method !== 'POST' || req.url !== '/api') { res.writeHead(404); return res.end(); }
   // JSON content type forces a CORS preflight (never answered), so other websites can't drive the strip

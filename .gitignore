@@ -2,3 +2,4 @@ node_modules/
 .claude/
 .playwright-mcp/
 .DS_Store
+.serena/

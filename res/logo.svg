@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Backlit">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#1B1B22"></stop>
+<stop offset="1" stop-color="#060608"></stop>
+</linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"></stop>
+<stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.12"></stop>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.2"></stop>
+</linearGradient>
+<linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"></stop>
+<stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.15"></stop>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.6"></stop>
+</linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+<feGaussianBlur stdDeviation="36"></feGaussianBlur>
+</filter>
+<filter id="drop" x="-30%" y="-30%" width="160%" height="160%">
+<feGaussianBlur stdDeviation="18"></feGaussianBlur>
+</filter>
+</defs>
+<rect width="1024" height="1024" rx="230" fill="url(#bg)"></rect>
+<g transform="translate(0 22)">
+<rect x="172" y="232" width="680" height="500" rx="140" fill="#FFFFFF" opacity="0.55" filter="url(#soft)"></rect>
+<rect x="232" y="312" width="560" height="380" rx="100" fill="#000000" opacity="0.35" filter="url(#drop)"></rect>
+<rect x="488" y="660" width="48" height="48" fill="#FFFFFF" opacity="0.32"></rect>
+<rect x="400" y="708" width="224" height="40" rx="20" fill="#FFFFFF" opacity="0.32"></rect>
+<rect x="232" y="292" width="560" height="380" rx="100" fill="url(#sheen)"></rect>
+<rect x="234" y="294" width="556" height="376" rx="98" fill="none" stroke="url(#rim)" stroke-width="4"></rect>
+<path d="M 352 420 L 672 420 M 352 556 L 672 556" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="28" stroke-linecap="round"></path>
+<circle cx="592" cy="420" r="46" fill="#FFFFFF"></circle>
+<circle cx="432" cy="556" r="46" fill="#FFFFFF"></circle>
+</g>
+</svg>

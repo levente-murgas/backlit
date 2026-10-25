@@ -1,3 +1,5 @@
+<p align="center"><img src="res/logo.svg" width="128" alt="Backlit logo"></p>
+
 # Backlit
 
 A small local app for controlling a USB RGBIC monitor backlight strip without the vendor software. It runs a tiny Node.js server on your machine and serves a web UI styled after Apple's Liquid Glass. There is also a command-line tool for scripting.

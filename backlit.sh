@@ -6,6 +6,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
+# @raycast.icon res/icon.png
 # @raycast.packageName Backlit
 # @raycast.description Start the Backlit LED strip UI (if not running) and open it in the browser
 
