@@ -14,7 +14,7 @@ The USB protocol was recovered from the vendor's DX Light app (Robobloq controll
 - **Brightness** from 0 to 100 %. Changes apply immediately, including to a solid colour or a running effect.
 - **Effects**
   - **Rainbow** and **Carousel**: built-in firmware animations. Carousel has a speed slider, from slow (turtle) to fast (bunny).
-  - **Smart pulse**: fades in and out through a list of colours you choose, with a configurable number of seconds per pulse. Pulses can be much slower than the firmware effects allow.
+  - **Pulse**: fades in and out through a list of colours you choose, with a configurable number of seconds per pulse. Pulses can be much slower than the firmware effects allow.
   - **Color cycle**: sweeps smoothly through every hue on the colour wheel. You set how many seconds a full cycle takes (120 by default).
   - Changes to effect settings apply straight away to the running effect.
 - **Turn off** the strip from the header.

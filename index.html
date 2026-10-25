@@ -191,7 +191,7 @@ const speed = () => 100 - $('speed').value;
 const EFFECTS = [
   { name: 'Rainbow', start: () => send('effect', 0, speed()) },
   { name: 'Carousel', panel: 'speedSettings', start: () => send('effect', 2, speed()) },
-  { name: 'Smart pulse', panel: 'pulseSettings',
+  { name: 'Pulse', panel: 'pulseSettings',
     start: () => send('pulse', [...$('pulseColors').children].map(c => c.value.slice(1)).join(','), $('period').value) },
   { name: 'Color cycle', panel: 'cycleSettings', start: () => send('cycle', $('cycleSeconds').value) },
 ];
