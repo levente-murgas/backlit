@@ -1,0 +1,17 @@
+{
+  "name": "backlit",
+  "version": "1.0.0",
+  "description": "Local Liquid Glass web UI and CLI for USB RGBIC monitor LED strips (DX Light / Robobloq controller)",
+  "main": "dxlight.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "node-hid": "^3.4.0"
+  }
+}
