@@ -2,6 +2,8 @@
 
 A small local app for controlling a USB RGBIC monitor backlight strip without the vendor software. It runs a tiny Node.js server on your machine and serves a web UI styled after Apple's Liquid Glass. There is also a command-line tool for scripting.
 
+![Backlit web UI in dark mode with the Color cycle effect selected](res/app.png)
+
 The USB protocol was recovered from the vendor's DX Light app (Robobloq controller, USB VID `0x1A86` / PID `0xFE07`), so no vendor software needs to be installed or running.
 
 ## Features
